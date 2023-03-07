@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Login Board</title>
+    <link rel="stylesheet" href="/static/css/login_style.css">
+  </head>
+  <body>
+    {% if msg =="Invalid cerditenials" %}
+      <strong class="error_notifi"> Username and password are invalid</strong>.
+    {% endif %}
+
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post" style="position: relative;">
+        <div class="txt_field">
+          <input type="text" name="myuser" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="passwd" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+      
+      </form>
+    </div>
+
+  </body>
+</html>
